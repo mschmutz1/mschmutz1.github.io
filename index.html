@@ -4,12 +4,12 @@
 <h1>Predicting Gun Violence in the Unites States</h1>
 <p>Recently, the US has experience a slew of mass shootings, each one seemingly more deadly than the rest, that have sparked massive media coverage. However, mass shootings are far from the only source of gun violence in this country. According to Wikipedia, as of 2013 the United States had a gun-related murder rate that was 25 times higher compared with 22 other high-income nations. The ability to predict where gun violence is likely to occur can help educators and activists target their efforts to areas at the greatest risk. While there is a lot of research going into the this subject, we hope to experiment with some unique attributes that may have predictive power.
 
-Our task was to predict the amount of gun violence in a given area using census data. We accumulated a dataset consisting of a wide array of input features for each county in the United States, and the number of gun violence incidents per capita in that region over past four years. We tried to tackle this problem with basic linear regression and then a more complex neural net. We found that both models had about the same predictive power, which both exceeded that of baseline techniques. Using just linear regression and a dozen features, we were able to predict the quadrant that the county would fall into at an accuracy rate 40%. Basic linear regression tended to overestimate the amount of violence in a given region. 
+Our task was to predict the amount of gun violence in a given area using census data. We accumulated a dataset consisting of a wide array of input features for each county in the United States, and the number of gun violence incidents per capita in that region over past four years. We tried to tackle this problem with basic linear regression and then a more complex neural net. We found that both models had about the same predictive power, which both exceeded that of baseline techniques. Using just linear regression and a dozen features, we were able to predict the quadrant that the county would fall into at an accuracy rate 40%. Basic linear regression tended to overestimate the amount of violence in a given region. </p>
 
 
-<img src='https://mschmutz1.github.io/Log_Error_Linear_Regression.png'>
+<img src='https://mschmutz1.github.io/Log_Error_Linear_Regression.png' height="42" width="42">
 
-This plot shows the training and testing error of our k-Fold linear regressor with respect to the number of features we used in our model. The error metric we used was RMSE of log(incidents per 1000 residents).</p>
+<p> This plot shows the training and testing error of our k-Fold linear regressor with respect to the number of features we used in our model. The error metric we used was RMSE of log(incidents per 1000 residents).</p>
 
 </body>
 </html>
