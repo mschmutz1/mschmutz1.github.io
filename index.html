@@ -3,23 +3,24 @@
 <body>
 <h1>Predicting Gun Violence in the Unites States</h1>
 
-Due to the increasingly deadly slew of mass shootings that the United States is currently experiencing, the ability to predict where and how gun violence is likely to occur has become an extremely pertinent task.
-
-<p>Our task has been to build a machine learning tool that predicts quanity of gun violence in a given location in the United States. Due to the increasingly deadly slew of mass shootings that the United States is currently experiencing, the ability to predict where and how gun violence is likely to occur has become an extremely pertinent task. Such a prediction can help educators and activists target their efforts to at-risk areas. While we know that ample research is currently being done on this subject, we hope to add to these efforts through our experimentation in machine learning. </p>
+<p>
+Our task has been to build a machine learning tool that predicts quanity of gun violence in a given location in the United States. Due to the increasingly deadly slew of mass shootings that the United States is currently experiencing, the ability to predict where and how gun violence is likely to occur has become an extremely pertinent task. Such a prediction can help educators and activists target their efforts to at-risk areas. While we know that ample research is currently being done on this subject, we hope to add to these efforts through our experimentation in machine learning. </p>
 
 <p>
 Specifically, our task was to predict the number of gun violence incidents at the county level. Primarily, we have focused our efforts on two types of models: linear regression and a feed-forward neural network. We trained and tested our models using an agglomeration of two datasets: census data and a dataset of all gun violence incidents over the past 4 years. We combined and aggregated these datasets at the county level and split our data into a train and test set. The complete dataset had close to 40 different attributes and around 3,200 counties. The attributes measured county-level percentages of racial groups, gender, income, modes of transportation, and employment (to name a few). 
 
 Both linear regression and neural network produced results that improved upon zeroR methods by between 20-50%.
+</p>
+
+<p>
 The plot below shows the training and testing error of our k-Fold linear regressor with respect to the number of features we used in our model. The error metric we used was  1 - (RMSE of log(incidents per 1000 residents)/zeroR. Larger values indicate smaller error in the models.
  </p>
 
 <img src='https://mschmutz1.github.io/Log_Error_Linear_Regression.png' height="420" width="420">
 
-<p> </p>
-
+<p> 
 Below is a collection of actual vs predicted incident counts from a neural network for a sample of counties.
-
+</p>
 <img src='https://mschmutz1.github.io/Figure_2.png' height="420" width="420">
 
 <p> </p>
